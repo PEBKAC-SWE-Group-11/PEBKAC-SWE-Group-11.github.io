@@ -222,6 +222,10 @@ footer{
 .person-card h3, .person-card h4 {
     margin: 0;
     padding-bottom: 8px; 
+
+}
+.person-card h4 {
+    font-weight: normal;
 }
 
 #social-list {
