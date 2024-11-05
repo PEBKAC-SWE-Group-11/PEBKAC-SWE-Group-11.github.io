@@ -10,7 +10,7 @@
             content="PEBKAC è il gruppo 11 del corso di Ingegneria del software dell'Università di Padova nell'anno accademico 2024-2025" />
         <meta name="author" content="PEBKAC" />
 
-        <title>PEBKAC</title>
+        <title lang="en">PEBKAC</title>
 
         <link href="assets/style/style.css" rel="stylesheet" />
 
@@ -19,7 +19,7 @@
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" lang="en">Home</a></li>
             <li><a href="index.html#candidatura">Candidatura</a></li>
             
         </ul>
@@ -37,8 +37,11 @@
                             <p>In questa pagina sono presenti i documenti per il progetto.</p>
                             <p>
                                 Link utili:
-                                <ul>
-                                    <li><a href="https://github.com/PEBKAC-SWE-Group-11/docs/tree/main">GitHub</a></li>
+                                <ul id="links">
+                                    <li id="github-link"><a href="https://github.com/orgs/PEBKAC-SWE-Group-11/repositories" lang="en"> PEBKAC - GitHub</a></li>
+                                    <li id="github-link"><a href="https://github.com/PEBKAC-SWE-Group-11/docs/tree/main" lang="en">docs - GitHub</a></li>
+                                    <li id="swe-link"><a href="https://didattica.unipd.it/off/2022/LT/SC/SC1167/000ZZ/SC01103936/N0">Ingegneria del <span lang="en">Software</span> - UniPD</a></li>
+                                    <!--<li id="capitolato"><a href="https://github.com/PEBKAC-SWE-Group-11/docs/tree/main" lang="en">GitHub</a></li>-->
                                 </ul>
                                 
                             </p>
@@ -50,28 +53,28 @@
             <div id="candidatura">
                 <h2> <img src="assets/img/icons/archive.svg" class="icon" >Candidatura</h2>
                 <p>Documenti per la candidatura al progetto</p>
-                <ul>
-                    <li> <img src="assets/img/icons/file.svg" class="icon"><a href="assets/pdf/">Lettera di Presentazione</a></li>
-                    <li> <img src="assets/img/icons/folder.svg" class="icon">Documenti interni
-                        <ul>
-                            <li> <img src="assets/img/icons/folder.svg" class="icon">Verbali interni
-                                <ul>
-                                    <li> <img src="assets/img/icons/file.svg" class="icon"><a href="">2024-10-16 V1.0.0</a></li>
-                                    <li> <img src="assets/img/icons/file.svg" class="icon"><a href="">2024-10-24 V1.0.0</a></li>
-                                    <li> <img src="assets/img/icons/file.svg" class="icon"><a href="">2024-10-15 V1.0.0</a></li>
-                                    <li> <img src="assets/img/icons/file.svg" class="icon"><a href="">2024-10-27 V1.0.0</a></li>
-                                    <li> <img src="assets/img/icons/file.svg" class="icon"><a href="">2024-10-30 V1.0.0</a></li>
+                <ul class="file-list">
+                    <li class="file"><a href="assets/pdf/">Lettera di Presentazione</a></li>
+                    <li class="archive"> Documenti interni
+                        <ul class="file-list">
+                            <li class="folder">Verbali interni
+                                <ul class="file-list">
+                                    <li class="file"> <a href="assets/pdf/Verbali/Interni/2024-10-16_V1.0.0.pdf" target="_blank">2024-10-16 V1.0.0</a></li>
+                                    <li class="file"> <a href="assets/pdf/Verbali/Interni/2024-10-24_V1.0.0.pdf" target="_blank">2024-10-24 V1.0.0</a></li>
+                                    <li class="file"> <a href="assets/pdf/Verbali/Interni/2024-10-25_V1.0.0.pdf" target="_blank">2024-10-25 V1.0.0</a></li>
+                                    <li class="file"> <a href="assets/pdf/Verbali/Interni/2024-10-27_V1.0.0.pdf" target="_blank">2024-10-27 V1.0.0</a></li>
+                                    <li class="file"> <a href="assets/pdf/Verbali/Interni/2024-10-30_V1.0.0.pdf" target="_blank">2024-10-30 V1.0.0</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li> <img src="assets/img/icons/folder.svg" class="icon" >Documenti esteri
-                        <ul>
-                            <li> <img src="assets/img/icons/file.svg" class="icon"><a href="">Preventico dei Costi e Assunzione degli Impegni V2.0.0</a></li>
-                            <li> <img src="assets/img/icons/file.svg" class="icon"><a href="">Analisi dei Capitolati V1.0.0</a></li>
-                            <li> <img src="assets/img/icons/folder.svg" class="icon">Verbali esterni
-                                <ul>
-                                    <li> <img src="assets/img/icons/file.svg" class="icon"><a href="">2024-10-23 V1.0.0</a></li>
+                    <li class="archive">Documenti esterni
+                        <ul class="file-list">
+                            <li class="file"> <a href="assets/pdf/Preventivo_Costi_Assunzione_Impegni_V2.0.0.pdf" target="_blank">Preventico dei Costi e Assunzione degli Impegni V2.0.0</a></li>
+                            <li class="file"> <a href="assets/pdf/Analisi_dei_Capitolati_V1.0.0.pdf" target="_blank">Analisi dei Capitolati V1.0.0</a></li>
+                            <li class="folder"> Verbali esterni
+                                <ul class="file-list">
+                                    <li class="file"> <a href="assets/pdf/Verbali/Esterni/VE_2024-10-16_V1.0.0.pdf" target="_blank">2024-10-23 V1.0.0</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -79,6 +82,92 @@
 
                 </ul>
             </div>
+            <div id="about-us">
+            <h2>Chi siamo</h2>
+            <div id="us">
+                <div class="person-card">
+                    <h3>Alessandro Benin</h3>
+                    <h4>2042356</h4>
+                    <ul id="social-list">
+                        <li id="github" class="logo" lang="en"><a href="https://github.com/AlexBenin01" target="_blank">GitHub</a></li>
+                        <!-- <li id="linkedin" class="logo" lang="en"><a href="https://linkedin.com/..." target="_blank">LinkedIn</a></li> -->
+                        <!-- <li id="website" class="logo" lang="en"><a href="https:..." target="_blank">Website</a></li>-->
+                        <li id="ist-email" class="logo" lang="en"><a href="mailto:alessandro.benin@studenti.unipd.it" target="_blank">Istitutional Mail</a></li>
+                        <li id="email" class="logo" lang="en"><a href="mailto:alessandrobenin01@gmail.com" target="_blank">Mail</a></li>
+                    </ul>
+                </div>
+                <div class="person-card">
+                    <h3>Ion Bourosu </h3>
+                    <h4>2010006</h4>
+                    <ul id="social-list">
+                        <li id="github" class="logo" lang="en"><a href="https://github.com/bourosuion" target="_blank">GitHub</a></li>
+                        <!--<li id="linkedin" class="logo" lang="en"><a href="https://linkedin.com/..." target="_blank">LinkedIn</a></li>-->
+                        <!--<li id="website" class="logo" lang="en"><a href="https:..." target="_blank">Website</a></li>-->
+                        <li id="ist-email" class="logo" lang="en"><a href="mailto:ion.bourosu@studenti.unipd.it" target="_blank">Istitutional Mail</a></li>
+                        <li id="email" class="logo" lang="en"><a href="mailto:bourosuion31@gmail.com" target="_blank">Mail</a></li>
+                    </ul>
+                </div>
+                <div class="person-card">
+                    <h3>Matteo Gerardin </h3>
+                    <h4>2075536</h4>
+                    <ul id="social-list">
+                        <li id="github" class="logo" lang="en"><a href="https://github.com/IlGera" target="_blank">GitHub</a></li>
+                        <!--<li id="linkedin" class="logo" lang="en"><a href="https://linkedin.com/..." target="_blank">LinkedIn</a></li>-->
+                        <!--<li id="website" class="logo" lang="en"><a href="https:..." target="_blank">Website</a></li>-->
+                        <li id="ist-email" class="logo" lang="en"><a href="mailto:matteo.gerardin@studenti.unipd.it" target="_blank">Istitutional Mail</a></li>
+                        <li id="email" class="logo" lang="en"><a href="mailto:matteo.gerardin2003@gmail.com" target="_blank">Mail</a></li>
+                    </ul>
+                </div>
+                <div class="person-card">
+                    <h3>Derek Gusatto </h3>
+                    <h4>2042330</h4>
+                    <ul id="social-list">
+                        <li id="github" class="logo" lang="en"><a href="https://github.com/DerekGusatto02" target="_blank">GitHub</a></li>
+                        <li id="linkedin" class="logo" lang="en"><a href="https://www.linkedin.com/in/derek-gusatto-9a3402216/" target="_blank">LinkedIn</a></li>
+                        <li id="website" class="logo" lang="en"><a href="https://www.derekgusatto.it" target="_blank">Website</a></li>
+                        <li id="ist-email" class="logo" lang="en"><a href="mailto:derek.gusatto@studenti.unipd.it" target="_blank">Istitutional Mail</a></li>
+                        <li id="email" class="logo" lang="en"><a href="mailto:gusattoderek@gmail.com" target="_blank">Mail</a></li>
+                    </ul>
+                </div>
+                <div class="person-card">
+                    <h3>Davide Martinelli </h3>
+                    <h4>2077679</h4>
+                    <ul id="social-list">
+                        <li id="github" class="logo" lang="en"><a href="https://github.com/dadinelli" target="_blank">GitHub</a></li>
+                        <!--<li id="linkedin" class="logo" lang="en"><a href="https://linkedin.com/..." target="_blank">LinkedIn</a></li>-->
+                        <!--<li id="website" class="logo" lang="en"><a href="https:..." target="_blank">Website</a></li>-->
+                        <li id="ist-email" class="logo" lang="en"><a href="mailto:davide.martinelli@studenti.unipd.it" target="_blank">Istitutional Mail</a></li>
+                        <li id="email" class="logo" lang="en"><a href="mailto:dadi.martinelli@gmail.com" target="_blank">Mail</a></li>
+                    </ul>
+                </div>
+                <div class="person-card">
+                    <h3>Matteo Piron </h3>
+                    <h4>2076044</h4>
+                    <ul id="social-list">
+                        <li id="github" class="logo" lang="en"><a href="https://github.com/Piruoiru" target="_blank">GitHub</a></li>
+                        <!--<li id="linkedin" class="logo" lang="en"><a href="https://linkedin.com/..." target="_blank">LinkedIn</a></li>-->
+                        <!--<li id="website" class="logo" lang="en"><a href="https:..." target="_blank">Website</a></li>-->
+                        <li id="ist-email" class="logo" lang="en"><a href="mailto:matteo.piron.2@studenti.unipd.it" target="_blank">Istitutional Mail</a></li>
+                        <li id="email" class="logo" lang="en"><a href="mailto:matteopiron2003@gmail.com" target="_blank">Mail</a></li>
+                    </ul>
+                </div>
+                <div class="person-card">
+                    <h3>Tommaso Zocche </h3>
+                    <h4>2075547</h4>
+                    <ul id="social-list">
+                        <li id="github" class="logo" lang="en"><a href="https://github.com/xZotchx" target="_blank">GitHub</a></li>
+                        <!--<li id="linkedin" class="logo" lang="en"><a href="https://linkedin.com/..." target="_blank">LinkedIn</a></li>-->
+                        <!--<li id="website" class="logo" lang="en"><a href="https:..." target="_blank">Website</a></li>-->
+                        <li id="ist-email" class="logo" lang="en"><a href="mailto:tommaso.zocche@studenti.unipd.it" target="_blank">Istitutional Mail</a></li>
+                        <li id="email" class="logo" lang="en"><a href="mailto:tommasozocche64@gmail.com" target="_blank">Mail</a></li>
+                    </ul>
+                </div>
+              
+            </div>
+        </div>
         </main>
+        <footer> 
+            <p>PEBKAC - &copy; 2024 - All rights reserved </p>
+        </footer>
 </body>
 </html>
