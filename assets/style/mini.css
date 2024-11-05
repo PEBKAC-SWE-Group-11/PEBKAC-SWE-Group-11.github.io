@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --darkColor: #1c494f;
+    --lightColor: #2d907c;
+    --lightBgColor: #d8f4ef;
+    --font-body-family: 'Geneva', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+html{
+    font-size: 100%;
+    font-family: var(--font-body-family);
+    line-height: 1.5em;
+    margin: auto;
+    color: black;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#togglemenu{
+    display: block;
+    cursor: pointer;
+    background-color: var(--bgColor);
+    border:0;
+    background-image: url("../img/icons/list.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:2.5em;
+    width:2.5em;
+    float: right;
+    margin:1.5em 1em 0em 0em;
+    text-indent: -999em;
+}
+
+#menu.tmenuhidden{
+    display: none;
+}
+
+#menu.tmenushow{
+    display: block;
+}
+
+
+#menu{
+    width:100%;
+    background-color: var(--darkColor);
+    border-top:1px solid var(--lightBgColor);
+    margin: 0.5em 0;
+}
+
+#menu ul{
+    padding: 0;
+    display: block;
+}
+
+#menu > ul > li{
+    width:100%;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    line-height: 3em;
+    background-color: var(--darkColor);
+    margin:0;
+    border-bottom:1px solid var(--lightBgColor);
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-gap: 0.3em; 
+    grid-template-areas: 
+        "i"
+        "t"
+        "t";    
+    align-items: center; 
+    text-align: justify;
+}
+
+.person-card {
+    width: 80%;
+}
