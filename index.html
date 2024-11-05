@@ -13,43 +13,53 @@
         <title lang="en">PEBKAC</title>
 
         <link href="assets/style/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/style/mini.css" media="screen and (max-width: 768px)">
+        <script src="assets/js/togglemenu.js"></script>
+        <!--<script src="assets/js/scrollTop.js"></script>-->
 
         <link rel="icon" href="assets/img/pebkac.ico" />
     </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html" lang="en">Home</a></li>
-            <li><a href="index.html#candidatura">Candidatura</a></li>
-            
-        </ul>
-    </nav>
+   
         <header class="header">
-            <div class="image-container">
-                <img
-                    src="assets/img/pebkac.svg"
-                    alt="" />
-            </div>
-            <div class="text-container">
-                            <h1>PEBKAC</h1>
-                            <p>
-                                PEBKAC è il gruppo 11 del corso di Ingegneria del software dell'Università di Padova nell'anno accademico 2024-2025.</p>
-                            <p>In questa pagina sono presenti i documenti per il progetto.</p>
-                            <p>
-                                Link utili:
-                                <ul id="links">
-                                    <li id="github-link"><a href="https://github.com/orgs/PEBKAC-SWE-Group-11/repositories" lang="en" target="_blank"> PEBKAC - GitHub</a></li>
-                                    <li id="github-link"><a href="https://github.com/PEBKAC-SWE-Group-11/docs/tree/main" lang="en" target="_blank">docs - GitHub</a></li>
-                                    <li id="swe-link"><a href="https://didattica.unipd.it/off/2022/LT/SC/SC1167/000ZZ/SC01103936/N0" target="_blank">Ingegneria del <span lang="en">Software</span> - UniPD</a></li>
-                                    <!--<li id="capitolato"><a href="https://github.com/PEBKAC-SWE-Group-11/docs/tree/main" lang="en">GitHub</a></li>-->
-                                </ul>
-                                
-                            </p>
-            </div>
+            <button id="togglemenu" onclick="toggleMenu()">Open menu</button>
+            <nav id="menu" class="tmenuhidden" aria-label="Main menu">
+                <ul>
+                    <li><a href="index.html" lang="en">Home</a></li>
+                    <li><a href="index.html#candidatura">Candidatura</a></li>
+                    
+                </ul>
+            </nav>
+            <nav aria-label="navigation Help" class="navigationhelp">
+                <a href="#content">Go to content</a>
+            </nav>
             
                     
         </header>
         <main>
+            <div class="banner">
+                <div class="image-container">
+                    <img
+                        src="assets/img/pebkac.svg"
+                        alt="" />
+                </div>
+            <div class="text-container">
+                <h1>PEBKAC</h1>
+                <p>
+                    PEBKAC è il gruppo 11 del corso di Ingegneria del software dell'Università di Padova nell'anno accademico 2024-2025.</p>
+                <p>In questa pagina sono presenti i documenti per il progetto.</p>
+                <p>
+                    Link utili:
+                    <ul id="links">
+                        <li id="github-link"><a href="https://github.com/orgs/PEBKAC-SWE-Group-11/repositories" lang="en" target="_blank"> PEBKAC - GitHub</a></li>
+                        <li id="github-link"><a href="https://github.com/PEBKAC-SWE-Group-11/docs/tree/main" lang="en" target="_blank">docs - GitHub</a></li>
+                        <li id="swe-link"><a href="https://didattica.unipd.it/off/2022/LT/SC/SC1167/000ZZ/SC01103936/N0" target="_blank">Ingegneria del <span lang="en">Software</span> - UniPD</a></li>
+                        <!--<li id="capitolato"><a href="https://github.com/PEBKAC-SWE-Group-11/docs/tree/main" lang="en">GitHub</a></li>-->
+                    </ul>
+                    
+                </p>
+</div>
+</div>
             <div id="candidatura">
                 <h2> <img src="assets/img/icons/archive.svg" class="icon" >Candidatura</h2>
                 <p>Documenti per la candidatura al progetto</p>
