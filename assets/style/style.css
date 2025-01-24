@@ -150,6 +150,10 @@ header{
 #links #swe-link {
     background-image: url('../img/icons/info_colored.svg'); 
 }
+
+#links #swe-link {
+    background-image: url('../img/icons/info_colored.svg'); 
+}
 /* FOOTER */
 footer{
     background-color: var(--darkColor);
@@ -164,6 +168,12 @@ footer{
 /* CANDIDATURA */
 
 #candidatura{
+    padding: 1em;
+}
+
+/* RTB */
+
+#rtb{
     padding: 1em;
 }
 
@@ -188,7 +198,9 @@ footer{
 .file-list .archive {
     background-image: url('../img/icons/archive.svg'); 
 }
-
+.file-list .code {
+    background-image: url('../img/icons/code.svg'); 
+}
 
 
 /* ABOUT US */
